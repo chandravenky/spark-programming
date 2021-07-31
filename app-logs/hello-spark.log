@@ -1,0 +1,16 @@
+21/07/31 09:25:35 INFO Hello Spark: Starting HelloSpark
+21/07/31 09:25:35 INFO Hello Spark: spark.app.id=local-1627745133942
+spark.app.name=Hello Spark
+spark.author=Venky
+spark.driver.extraJavaOptions=-Dlog4j.configuration=file:log4j.properties -Dspark.yarn.app.container.log.dir=app-logs -Dlogfile.name=hello-spark
+spark.driver.host=cgdv-l0081.intranet.replicon.com
+spark.driver.port=60826
+spark.executor.id=driver
+spark.master=local[3]
+spark.rdd.compress=True
+spark.serializer.objectStreamReset=100
+spark.submit.deployMode=client
+spark.submit.pyFiles=
+spark.ui.showConsoleProgress=true
+spark.yarn.app.container.log.dir=app-logs
+21/07/31 09:25:35 INFO Hello Spark: Finished HelloSpark
