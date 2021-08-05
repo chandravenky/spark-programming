@@ -1,35 +1,16 @@
-from pyspark import SparkConf
-from pyspark.sql import *
-from lib.logger import log4J
+# This is a sample Python script.
 
-from lib.utils import get_spark_app_config
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    print_hi('PyCharm')
 
-    #Create driver
-    # Start a spark session
-    # Set configuration
-    # Local multi-threaded architecture with 3 threads
-
-    conf = get_spark_app_config()
-
-    spark = SparkSession.builder \
-            .config(conf=conf) \
-            .getOrCreate()
-
-    logger = log4J(spark)
-
-    logger.info("Starting HelloSpark")
-    #any processing code
-
-    conf_out = spark.sparkContext.getConf() #Read spark configs
-    logger.info(conf_out.toDebugString())
-
-    logger.info("Finished HelloSpark")
-
-    #Stop driver after work is done
-    spark.stop()
-
-    print('Hello Spark')
-
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
